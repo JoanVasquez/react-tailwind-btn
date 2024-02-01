@@ -1,4 +1,6 @@
-import { GoBell, GoCloudDownload, GoDatabase } from "react-icons/go";
+import { GoBell, GoDatabase } from "react-icons/go";
+import { FaDownload } from "react-icons/fa6";
+
 import Button from "./Button";
 
 const App = () => {
@@ -22,7 +24,7 @@ const App = () => {
       </div>
       <div>
         <Button danger outline onMouseEnter={handleClick}>
-          <GoCloudDownload />
+          <FaDownload />
           Buy Now!
         </Button>
       </div>
