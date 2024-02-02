@@ -3,6 +3,8 @@ import Sidebar from "./components/Sidebar";
 import AccordionPage from "./pages/AccordionPage";
 import ButtonPage from "./pages/ButtonPage";
 import SelectPage from "./pages/SelectPage";
+import ModalPage from "./pages/ModalPage";
+import DataTablePage from "./pages/DataTablePage";
 
 const menuList = [
   {
@@ -19,6 +21,16 @@ const menuList = [
     label: "Select",
     path: "/select",
     page: <SelectPage />,
+  },
+  {
+    label: "Modal",
+    path: "/modal",
+    page: <ModalPage />,
+  },
+  {
+    label: "Data Table",
+    path: "/datatable",
+    page: <DataTablePage />,
   },
 ];
 
