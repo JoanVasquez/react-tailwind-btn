@@ -6,8 +6,10 @@ const Select = ({ label, options, selected, setSelected }) => {
   const divEl = useRef();
 
   const handler = (event) => {
-    if (!divEl.current.contains(event.target)) {
-      setShowOptions(false);
+    if (divEl.current) {
+      if (!divEl.current.contains(event.target)) {
+        setShowOptions(false);
+      }
     }
   };
 

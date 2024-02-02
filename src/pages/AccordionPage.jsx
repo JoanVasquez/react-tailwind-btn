@@ -21,7 +21,7 @@ const AccordionPage = () => {
   };
 
   return (
-    <div>
+    <div className="w-full">
       {accordionData.map((item) => (
         <div className="mt-5" key={item.id}>
           <Accordion>
