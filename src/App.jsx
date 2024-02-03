@@ -5,6 +5,7 @@ import ButtonPage from "./pages/ButtonPage";
 import SelectPage from "./pages/SelectPage";
 import ModalPage from "./pages/ModalPage";
 import DataTablePage from "./pages/DataTablePage";
+import CounterPage from "./pages/CounterPage";
 
 const menuList = [
   {
@@ -31,6 +32,11 @@ const menuList = [
     label: "Data Table",
     path: "/datatable",
     page: <DataTablePage />,
+  },
+  {
+    label: "Counter",
+    path: "/counter",
+    page: <CounterPage />,
   },
 ];
 

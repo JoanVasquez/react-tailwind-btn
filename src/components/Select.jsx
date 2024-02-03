@@ -16,12 +16,12 @@ const Select = ({ label, options, selected, setSelected }) => {
   const handlerSelected = (option) => {
     setSelected(option);
     setShowOptions(false);
-
-    document.addEventListener("click", handler);
   };
 
   useEffect(() => {
-    document.removeEventListener("click", handler);
+    document.addEventListener("click", handler);
+
+    return () => document.removeEventListener("click", handler);
   }, []);
 
   return (
