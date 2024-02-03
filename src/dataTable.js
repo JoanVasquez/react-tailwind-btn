@@ -2,6 +2,8 @@ import React from "react";
 import { GoBell } from "react-icons/go";
 import { IoMdArrowDropdown } from "react-icons/io";
 
+const names = ["Joan", "Pedro", "Juan", "Raymon"];
+
 const genDataTable = () => {
   const dataTable = [];
 
@@ -10,10 +12,10 @@ const genDataTable = () => {
       id: `${i}`,
       name: "test",
       isActive: true,
-      createdBy: "Joan Vasquez",
-      createdDate: new Date().toLocaleDateString(),
-      modifiedBy: "Joan Vasquez",
-      modifiedDate: new Date().toLocaleDateString(),
+      createdBy: names[Math.floor(Math.random() * names.length)],
+      createdDate: new Date().toLocaleString(),
+      modifiedBy: names[Math.floor(Math.random() * names.length)],
+      modifiedDate: new Date().toLocaleString(),
     };
 
     dataTable.push(category);
@@ -41,12 +43,12 @@ export const headers = [
   {
     label: "Created By",
     name: "createdBy",
-    isSort: false,
+    isSort: true,
   },
   {
     label: "Created Date",
     name: "createdDate",
-    isSort: true,
+    isSort: false,
   },
   {
     label: "Modified By",
